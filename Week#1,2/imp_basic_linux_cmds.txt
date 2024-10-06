@@ -1,0 +1,36 @@
+COMMANDS:
+sudo -i (better) OR su - : login as root user
+
+compgen -u / -g : list all users / groups
+
+pwd : find path of your current working directory
+cd ..	/ - / ~[username] : move one directory up / move to your previous directory / go to another user’s home directory
+
+tr -d 'char'/ [:operation:] 'char' : delete specific characters / apply operation on mentioned characters  [1]
+
+sed -i 's/original/new/g' filename* : replace all occurences of a substring with new one in a file
+
+ln -s : create a symbolic link in your home directory
+link / unlink: create / delete link
+readlink : find where the link points
+
+ls .. / -d '*': list contents of "above" working directory (parent directory) / list only directories
+
+man {operations} : use '/' to search, press 'n' to go next occurence & 'n+shift' to go back to previous one, 'q' to quit, 'g' to top, 'G' to end
+
+apropos [word] : search for a word associated with that command when you can’t think of the name
+find -name : search for file names in a directory hierarchy {excluding directory names} 
+
+grep {operations} : use '/' to escape special characters in patterns
+grep -o / egrep -o : print only the matched (non-empty) parts of a matching line (in regex)
+
+hwclock -s : sometime req. to align clock when make command is run on WSL (i.e. Windows Subsystem for Linux)
+
+tee <sourcefile.jpg targetfiles{01..50}.jpg >/dev/null : copy file to multiple other files, but without permissions
+
+
+IMPORTANT-NOTE:
+most commands give better applications when used/combined with pipes ('|') or redirection operators ('>', '<', etc)
+
+REFERENCES:
+[1] https://www.geeksforgeeks.org/tr-command-in-unixlinux-with-examples/

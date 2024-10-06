@@ -1,0 +1,3 @@
+touch $(<string.txt)
+# OR
+touch $(<../string.txt)

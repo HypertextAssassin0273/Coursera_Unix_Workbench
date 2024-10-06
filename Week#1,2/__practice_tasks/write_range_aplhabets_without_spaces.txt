@@ -1,0 +1,5 @@
+echo {0..9} | tr -d ' '
+# OR
+echo {a..z} | tr -d ' '
+# OR
+echo {A..Z} | tr -d ' '

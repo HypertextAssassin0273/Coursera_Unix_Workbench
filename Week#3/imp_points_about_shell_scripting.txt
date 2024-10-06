@@ -1,0 +1,8 @@
+let : allows you to modify a variable with correct type-casting
+declare : allows you to create a variable without initialization
+export : allows us to modify an environmental variable (with immediate effect)
+source : allows us to use functions as commands
+backslash (\) : can be used to continue the command in the next line.
+pipe (|) : takes the standard output of one process & passes it as standard input into another process
+           hence, can only be used with functions that compute values
+           (while keeping the concept of 'composability')

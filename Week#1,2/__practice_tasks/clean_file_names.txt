@@ -1,0 +1,1 @@
+cat str* | tr "##\n" ' ' > str*
